@@ -101,7 +101,8 @@ header,
 .headerorange {
   background-color: rgb(244, 120, 32);
   color: white;
-  padding: 8px;
+  padding: 12px;
+  font-size: large;
 }
 
 
@@ -154,4 +155,14 @@ body {
 
 .my-custom-container {
   padding-left: 88px;
+  padding-top: 8px;
+}
+
+.project-info {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.button-padding {
+  padding-top: 16px
 }
