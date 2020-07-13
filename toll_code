@@ -1,0 +1,17 @@
+import json
+import pandas as pd
+import requests
+from hdfs import InsecureClient
+from io import BytesIO
+import re
+
+df = pd.read_csv(r'C:\Users\alexb\Desktop\NYS_15Min_2019_Q4.csv',encoding='latin-1')
+
+df.columns = ['date','entrance','exit','interval_beginning_time','vehicle_class','vehicle_count','payment_type']
+
+df.to_csv(r'C:\Users\alexb\Desktop\2019Q4.csv',index=False,sep=',')
+#hdfsUrl = 'http://192.168.30.124:50070'
+#hdfsClient = InsecureClient(hdfsUrl)
+#targetFile = r'/Tolls/Files/2019Q4.csv'
+#with hdfsClient.write(targetFile,encoding='utf8')as writer:
+#    df.to_csv(writer,index=False,sep=',')

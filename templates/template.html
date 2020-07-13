@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Capital Pipeline</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container">
+      <section class="wow fadeIn">
+        <div class="row">
+
+          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-7 background-left">
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+                <div class="row">
+                  <div class="col-12 background-blank"></div>
+                </div>
+                <img
+                  src="https://capitalpipelineprojects001.s3.us-east-2.amazonaws.com/img/png/Capital+Pipeline+secondary+logo.png"
+                  class="logo2" />
+              </div>
+              <div class="col-xs-9 col-sm-9 col-md-9 col-9">
+                <img
+                  src="https://capitalpipelineprojects001.s3.us-east-2.amazonaws.com/img/png/Capital+Pineline+written+out+white.png"
+                  class="logo3" align="left" />
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-5 background-right">
+            <div class="row">
+              <div class="col-12 background-blank-sm"></div>
+            </div>
+            <div class='tright'><strong>PROJECT<br>REPORT</strong></div>
+            <div class='tright2'>capitalpipeline.tech</div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 background-black"></div>
+        </div>
+
+      </section>
+
+      <div class="my-custom-container">
+        <span class="headerorange mt-4"><strong>PROJECT NAME</strong></span>
+
+
+        <div class="mt-2">
+          <h4><strong>{{ db_dict.project_name['project_name'][0] }}</h4></strong>
+        </div>
+
+
+        <div class="row mt-1 text-center">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+            <h5 class="headerorange"><strong>PROJECT FUNDAMENTALS</strong></h5>
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-7"></div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-10">
+            <ul>
+              {% for key, value in db_dict.project_fundamentals.items() %}
+              <li><strong>{{key}}</strong>: {{value[0]}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+        </div>
+
+        <div class="row mt-1 text-center">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-3">
+            <h5 class="headerorange"><strong>PROJECT CONTACT</strong></h5>
+          </div>
+          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 col-7"></div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-10">
+            <ul>
+              {% for key, value in db_dict.project_contact.items() %}
+              <li><strong>{{key}}</strong>: {{value[0]}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-1"></div>
+        </div>
+
+        <div class="row mt-1 mb-2 text-center">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-2">
+            <h5 class="headerorange"><strong>DIVISIONS</strong></h5>
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-8"></div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-1"></div>
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-10">
+            <ul>
+              {% for key, value in db_dict.division.items() %}
+              <li><strong>{{key}}</strong>: {{value[0]}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

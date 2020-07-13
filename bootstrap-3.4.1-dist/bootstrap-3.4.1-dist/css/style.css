@@ -1,0 +1,157 @@
+ol li {
+  font-weight: bold;
+}
+
+li>p {
+  font-weight: normal;
+}
+
+,
+br {
+  display: block;
+  margin: 2px 0;
+}
+
+,
+header,
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331 !important;
+  }
+}
+
+.view {
+  height: 88%;
+}
+
+.center {
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-collapse {
+  background-color: #1C2331;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
+  }
+}
+
+.page-footer {
+  background-color: #1C2331;
+}
+
+.logo {
+  width: 80%;
+  height: auto;
+}
+
+.logo3 {
+  width: 90%;
+  margin-top: 7.5%;
+  margin-right: 80%;
+  height: auto;
+}
+
+.tright {
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 80;
+  margin-top: 20px;
+  color: white;
+  line-height: 30px;
+}
+
+.tright2 {
+  vertical-align: middle;
+
+  font-size: 16px;
+  color: white;
+}
+
+.background-left {
+  background-color: rgb(56, 52, 40);
+  height: 120px;
+}
+
+.headerorange {
+  background-color: rgb(244, 120, 32);
+  color: white;
+  padding: 8px;
+}
+
+
+
+.background-right {
+  background-color: rgb(244, 120, 32);
+  height: 120px;
+}
+
+.background-black {
+  background-color: black;
+  height: 20px;
+}
+
+.background-blank {
+  height: 20px;
+}
+
+.background-blank-sm {
+  height: 1px;
+}
+
+.logo2 {
+  width: 60%;
+  margin-top: 15%;
+  vertical-align: baseline;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+}
+
+body {
+  background: rgb(204, 204, 204);
+}
+
+/* chase css */
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: rgb(244, 120, 32);
+  transition: background 0.3s ease;
+}
+
+
+
+.margin-0 {
+  margin: 0 auto;
+}
+
+.my-custom-container {
+  padding-left: 88px;
+}
