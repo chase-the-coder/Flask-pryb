@@ -8,6 +8,6 @@ MarkupSafe==1.1.1
 six==1.13.0
 Werkzeug==0.16.0
 hdfs==2.5.8
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 pdfkit==0.6.1
 pandas==0.24.1
